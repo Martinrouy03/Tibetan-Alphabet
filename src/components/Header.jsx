@@ -4,11 +4,13 @@ import { useState } from "react";
 import VoyelHeader from "./VoyelHeader";
 import SubscriptHeader from "./SubscriptHeader";
 import SuperscriptHeader from "./SuperscriptHeader";
+import PrefixHeader from "./PrefixHeader";
 const Header = ({ learningMode, setLearningMode }) => {
   const [headerButtons, setHeaderButtons] = useState("");
   const [voyelButtons, setVoyelButtons] = useState([1, 0, 0, 0]);
   const [subscriptButton, setSubscriptButton] = useState("ya");
   const [superscriptButton, setSuperscriptButton] = useState("ra");
+  const [prefixButton, setPrefixButton] = useState("ga");
   return (
     <header className="container">
       <div className="menu-header">
@@ -71,6 +73,41 @@ const Header = ({ learningMode, setLearningMode }) => {
                 Superscripts
               </div>
             </Link>
+            <Link to="/Prefix1" style={{ textDecoration: "none" }}>
+              <div
+                onClick={() => setHeaderButtons("prefix")}
+                style={{
+                  backgroundColor: headerButtons === "prefix" ? "black" : "red",
+                  border: headerButtons === "prefix" ? "red solid 2px" : "none",
+                }}
+              >
+                Prefix
+              </div>
+            </Link>
+            <Link to="/Suffix1" style={{ textDecoration: "none" }}>
+              <div
+                onClick={() => setHeaderButtons("suffix")}
+                style={{
+                  backgroundColor: headerButtons === "suffix" ? "black" : "red",
+                  border: headerButtons === "suffix" ? "red solid 2px" : "none",
+                }}
+              >
+                Suffix
+              </div>
+            </Link>
+            <Link to="/Syllable1" style={{ textDecoration: "none" }}>
+              <div
+                onClick={() => setHeaderButtons("syllable")}
+                style={{
+                  backgroundColor:
+                    headerButtons === "syllable" ? "black" : "red",
+                  border:
+                    headerButtons === "syllable" ? "red solid 2px" : "none",
+                }}
+              >
+                Syllable
+              </div>
+            </Link>
           </div>
           <div className="empty"></div>
         </div>
@@ -97,6 +134,14 @@ const Header = ({ learningMode, setLearningMode }) => {
             superscriptButton={superscriptButton}
             setSuperscriptButton={setSuperscriptButton}
           ></SuperscriptHeader>
+        )}
+        {headerButtons === "prefix" && (
+          <PrefixHeader
+            learningMode={learningMode}
+            setLearningMode={setLearningMode}
+            prefixButton={prefixButton}
+            setPrefixButton={setPrefixButton}
+          ></PrefixHeader>
         )}
       </div>
     </header>
