@@ -24,7 +24,6 @@ const PrefixHeader = ({
               >
                 {prefix}
               </div>
-              ;
             </Link>
           );
         })}
