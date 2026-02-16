@@ -15,6 +15,9 @@ import SubscriptOua from "./pages/subscripts/SubscriptOua";
 import SuperscriptRa from "./pages/superscripts/SuperscriptRa";
 import SuperscriptLa from "./pages/superscripts/SuperscriptLa";
 import SuperscriptSa from "./pages/superscripts/SuperscriptSa";
+import Prefix1 from "./pages/Prefix1";
+import Suffix1 from "./pages/Suffix1";
+import Syllable1 from "./pages/Syllable1";
 function App() {
   const [learningMode, setLearningMode] = useState("reading");
   return (
@@ -70,6 +73,9 @@ function App() {
           path="/SuperscriptSa"
           element={<SuperscriptSa learningMode={learningMode} />}
         ></Route>
+        <Route path="/Prefix1" element={<Prefix1 />}></Route>
+        <Route path="/Suffix1" element={<Suffix1 />}></Route>
+        <Route path="/Syllable1" element={<Syllable1 />}></Route>
       </Routes>
     </Router>
   );
