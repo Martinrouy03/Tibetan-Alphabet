@@ -24,7 +24,7 @@ const SuperscriptHeader = ({
               className="superscriptImg"
               src={superscript1}
               onClick={() => setSuperscriptButton("ra")}
-              alt=""
+              alt="Superscript Ra"
             />
           </div>
         </Link>
@@ -39,7 +39,7 @@ const SuperscriptHeader = ({
               className="superscriptImg"
               src={superscript2}
               onClick={() => setSuperscriptButton("la")}
-              alt=""
+              alt="Superscript La"
             />
           </div>
         </Link>
@@ -54,7 +54,7 @@ const SuperscriptHeader = ({
               className="superscriptImg"
               src={superscript3}
               onClick={() => setSuperscriptButton("sa")}
-              alt=""
+              alt="Superscript Sa"
             />
           </div>
         </Link>

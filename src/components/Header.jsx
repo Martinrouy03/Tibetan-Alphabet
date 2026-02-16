@@ -17,7 +17,7 @@ const Header = ({ learningMode, setLearningMode }) => {
         <div className="top-header">
           <Link to="/">
             <div className="welcomeButton">
-              <img src={pod} alt="" onClick={() => setHeaderButtons("")} />
+              <img src={pod} alt="Tibetan home" onClick={() => setHeaderButtons("")} />
             </div>
           </Link>
           <div className="page-buttons">

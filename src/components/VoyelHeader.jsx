@@ -23,7 +23,7 @@ const VoyelHeader = ({
             className="voyelImg"
             onClick={() => setVoyelButtons([1, 0, 0, 0])}
           >
-            <img src={kyikou} alt="" className="voyelImg" />
+            <img src={kyikou} alt="Kyikou vowel" className="voyelImg" />
           </div>
         </Link>
         <Link to="/Chabkyou" style={{ textDecoration: "none" }}>
@@ -36,7 +36,7 @@ const VoyelHeader = ({
               className="voyelImg"
               src={chabkyou}
               onClick={() => setVoyelButtons([0, 1, 0, 0])}
-              alt=""
+              alt="Chabkyou vowel"
             />
           </div>
         </Link>
@@ -50,7 +50,7 @@ const VoyelHeader = ({
               className="voyelImg"
               src={drebou}
               onClick={() => setVoyelButtons([0, 0, 1, 0])}
-              alt=""
+              alt="Drebou vowel"
             />
           </div>
         </Link>
@@ -64,7 +64,7 @@ const VoyelHeader = ({
               className="voyelImg"
               src={naro}
               onClick={() => setVoyelButtons([0, 0, 0, 1])}
-              alt=""
+              alt="Naro vowel"
             />
           </div>
         </Link>

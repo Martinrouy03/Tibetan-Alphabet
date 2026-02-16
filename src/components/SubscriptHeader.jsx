@@ -25,7 +25,7 @@ const SubscriptHeader = ({
               className="subscriptImg"
               src={subscript1}
               onClick={() => setSubscriptButton("ya")}
-              alt=""
+              alt="Subscript Ya"
             />
           </div>
         </Link>
@@ -40,7 +40,7 @@ const SubscriptHeader = ({
               className="subscriptImg"
               src={subscript2}
               onClick={() => setSubscriptButton("ra")}
-              alt=""
+              alt="Subscript Ra"
             />
           </div>
         </Link>
@@ -55,7 +55,7 @@ const SubscriptHeader = ({
               className="subscriptImg"
               src={subscript3}
               onClick={() => setSubscriptButton("la")}
-              alt=""
+              alt="Subscript La"
             />
           </div>
         </Link>
@@ -70,7 +70,7 @@ const SubscriptHeader = ({
               className="subscriptImg"
               src={subscript4}
               onClick={() => setSubscriptButton("oua")}
-              alt=""
+              alt="Subscript Oua"
             />
           </div>
         </Link>
